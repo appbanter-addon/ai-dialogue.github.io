@@ -1,67 +1,119 @@
-<h3 id="learn-how-to-create-immersive-natural-sounding-dialogue-with-ai-dialogue">Learn how to create immersive, natural-sounding dialogue with AI Dialogue</h3>
-<p>The AI Dialogue generates natural, expressive conversations from text using advanced AI technology. Popular applications include:
--Crafting realistic dialogue for video games
--Producing immersive conversations for podcasts and other audio content
--Adding dynamic narration to audiobooks for a more engaging experience</p>
-<p>Listen to a sample: </p>
-<audio controls>
-  <source src="https://appbanter.s3.us-east-1.amazonaws.com/git/dialogue.mp3" />
-</audio>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Dialogue Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2, h3 {
+            color: #444;
+        }
+        p {
+            margin: 1rem 0;
+        }
+        audio {
+            display: block;
+            margin: 1rem 0;
+        }
+        pre {
+            background: #f9f9f9;
+            padding: 1rem;
+            border-left: 4px solid #ddd;
+            overflow-x: auto;
+        }
+        code {
+            font-family: monospace;
+            color: #c7254e;
+            background: #f9f9f9;
+        }
+        ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+        li {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI Dialogue Showcase</h1>
+    </header>
+    <main>
+        <h3 id="learn-how-to-create-immersive-natural-sounding-dialogue-with-ai-dialogue">Learn how to create immersive, natural-sounding dialogue with AI Dialogue</h3>
+        <p>The AI Dialogue generates natural, expressive conversations from text using advanced AI technology. Popular applications include:</p>
+        <ul>
+            <li>Crafting realistic dialogue for video games</li>
+            <li>Producing immersive conversations for podcasts and other audio content</li>
+            <li>Adding dynamic narration to audiobooks for a more engaging experience</li>
+        </ul>
+        <p>Listen to a sample:</p>
+        <audio controls>
+            <source src="https://appbanter.s3.us-east-1.amazonaws.com/git/dialogue.mp3" />
+        </audio>
 
-<h2 id="prompting">Prompting</h2>
-<p>The models analyze emotional context directly from the text input. For instance, adding descriptive phrases like &quot;she said excitedly&quot; or using punctuation such as exclamation marks will shape the emotion of the speech. Voice settings like Stability and Similarity allow you to control the consistency of the delivery, while the core emotion is drawn from the textual cues provided.</p>
-<h3 id="emotional-deliveries-with-audio-tags">Emotional deliveries with audio tags</h3>
-<p>The AI Dialogue allows the use of non-speech audio events to influence the delivery of the dialogue. This is done by inserting the audio events into the text input wrapped in square brackets.</p>
-<p>Audio tags come in a few different forms:</p>
-<h3 id="emotions-and-delivery">Emotions and delivery</h3>
-<p>For example, [sad], [laughing] and [whispering]</p>
-<h3 id="audio-events">Audio events</h3>
-<p>For example, [leaves rustling], [gentle footsteps] and [applause].</p>
-<h3 id="overall-direction">Overall direction</h3>
-<p>For example, [football], [wrestling match] and [auctioneer].</p>
-<p>Some examples include:</p>
-<pre><code><span class="hljs-comment">"[giggling] That's really funny!"</span>
-<span class="hljs-comment">"[groaning] That was awful."</span>
-<span class="hljs-comment">"Well, [sigh] I'm not sure what to say."</span>
-</code></pre><audio controls> 
-  <source src="https://appbanter.s3.us-east-1.amazonaws.com/git/dialogue-emotive.mp3" type="audio/mpeg"> 
-</audio>
+        <h2 id="prompting">Prompting</h2>
+        <p>The models analyze emotional context directly from the text input. For instance, adding descriptive phrases like "she said excitedly" or using punctuation such as exclamation marks will shape the emotion of the speech. Voice settings like Stability and Similarity allow you to control the consistency of the delivery, while the core emotion is drawn from the textual cues provided.</p>
 
-<p>You can also use punctuation to indicate the flow of dialog, like interruptions:</p>
-<pre><code>"<span class="hljs-selector-attr">[cautiously]</span> <span class="hljs-selector-tag">Hello</span>, <span class="hljs-selector-tag">is</span> <span class="hljs-selector-tag">this</span> <span class="hljs-selector-tag">seat-</span>"
-"<span class="hljs-selector-attr">[jumping in]</span> <span class="hljs-selector-tag">Free</span>? <span class="hljs-selector-attr">[cheerfully]</span> <span class="hljs-selector-tag">Yes</span> <span class="hljs-selector-tag">it</span> <span class="hljs-selector-tag">is</span>."
-</code></pre><audio controls> 
-  <source src="https://appbanter.s3.us-east-1.amazonaws.com/git/dialogue-interruption.mp3?raw=1" type="audio/mpeg"> 
-</audio> 
+        <h3 id="emotional-deliveries-with-audio-tags">Emotional deliveries with audio tags</h3>
+        <p>The AI Dialogue allows the use of non-speech audio events to influence the delivery of the dialogue. This is done by inserting the audio events into the text input wrapped in square brackets.</p>
+        <p>Audio tags come in a few different forms:</p>
+        <h3 id="emotions-and-delivery">Emotions and delivery</h3>
+        <p>For example, [sad], [laughing] and [whispering]</p>
+        <h3 id="audio-events">Audio events</h3>
+        <p>For example, [leaves rustling], [gentle footsteps] and [applause].</p>
+        <h3 id="overall-direction">Overall direction</h3>
+        <p>For example, [football], [wrestling match] and [auctioneer].</p>
+        <p>Some examples include:</p>
+        <pre><code>[giggling] That's really funny!
+[groaning] That was awful.
+Well, [sigh] I'm not sure what to say.</code></pre>
+        <audio controls>
+            <source src="https://appbanter.s3.us-east-1.amazonaws.com/git/dialogue-emotive.mp3" type="audio/mpeg">
+        </audio>
 
-<p>Ellipses can be used to indicate trailing sentences:</p>
-<pre><code><span class="hljs-comment">"[indecisive] Hi, can I get uhhh..."</span>
-<span class="hljs-comment">"[quizzically] The usual?"</span>
-<span class="hljs-comment">"[elated] Yes! [laughs] I'm so glad you knew!"</span>
-</code></pre><audio controls> 
-  <source src="https://appbanter.s3.us-east-1.amazonaws.com/git/dialogue-ellipses.mp3" type="audio/mpeg"> 
-</audio>  
+        <h2 id="prompting-best-practices">Prompting Best Practices</h2>
+        <h3 id="audio-tags">Audio tags</h3>
+        <p>AI Dialogue introduces emotional control through audio tags. You can direct voices to laugh, whisper, act sarcastic, or express curiosity among many other styles. Speed is also controlled through audio tags.</p>
+        <p><strong>Note:</strong> The voice you choose and its training samples will affect tag effectiveness. Some tags work well with certain voices while others may not. Don't expect a whispering voice to suddenly shout with a <code>[shout]</code> tag.</p>
 
-<h2 id="prompting-best-practices">Prompting Best practices</h2>
-<h3 id="audio-tags">Audio tags</h3>
-<p>AI Dialogue introduces emotional control through audio tags. You can direct voices to laugh, whisper, act sarcastic, or express curiosity among many other styles. Speed is also controlled through audio tags.</p>
-<Note>
-  The voice you choose and its training samples will affect tag effectiveness. Some tags work well
-  with certain voices while others may not. Don&#39;t expect a whispering voice to suddenly shout with a
-  <code>[shout]</code> tag.
-</Note>
-
-<h4 id="voice-related">Voice-related</h4>
-<p>These tags control vocal delivery and emotional expression:</p>
-<ul>
-<li><code>[laughs]</code>, <code>[laughs harder]</code>, <code>[starts laughing]</code>, <code>[wheezing]</code></li>
-<li><code>[whispers]</code></li>
-<li><code>[sighs]</code>, <code>[exhales]</code></li>
-<li><code>[sarcastic]</code>, <code>[curious]</code>, <code>[excited]</code>, <code>[crying]</code>, <code>[snorts]</code>, <code>[mischievously]</code></li>
-</ul>
-<p>```text Example
+        <h4 id="voice-related">Voice-related</h4>
+        <p>These tags control vocal delivery and emotional expression:</p>
+        <ul>
+            <li><code>[laughs]</code>, <code>[laughs harder]</code>, <code>[starts laughing]</code>, <code>[wheezing]</code></li>
+            <li><code>[whispers]</code></li>
+            <li><code>[sighs]</code>, <code>[exhales]</code></li>
+            <li><code>[sarcastic]</code>, <code>[curious]</code>, <code>[excited]</code>, <code>[crying]</code>, <code>[snorts]</code>, <code>[mischievously]</code></li>
+        </ul>
+        <p>```text Example
 [whispers] I never knew it could be this way, but I&#39;m glad we&#39;re here.</p>
-<pre><code>
+        <pre><code>
 #### Sound effects
 
 Add environmental sounds and effects:
@@ -71,15 +123,16 @@ Add environmental sounds and effects:
 
 ```text Example
 [applause] Thank you all for coming tonight! [gunshot] What was that?
-</code></pre><h4 id="unique-and-special">Unique and special</h4>
-<p>Experimental tags for creative applications:</p>
-<ul>
-<li><code>[strong X accent]</code> (replace X with desired accent)</li>
-<li><code>[sings]</code>, <code>[woo]</code>, <code>[fart]</code></li>
-</ul>
-<p>```text Example
+</code></pre>
+        <h4 id="unique-and-special">Unique and special</h4>
+        <p>Experimental tags for creative applications:</p>
+        <ul>
+            <li><code>[strong X accent]</code> (replace X with desired accent)</li>
+            <li><code>[sings]</code>, <code>[woo]</code>, <code>[fart]</code></li>
+        </ul>
+        <p>```text Example
 [strong French accent] &quot;Zat&#39;s life,my friend — you can&#39;t control everysing.&quot;</p>
-<pre><code>
+        <pre><code>
 &lt;Warning&gt;
   Some experimental tags may be less consistent across different voices. Test thoroughly before
   production use.
@@ -95,10 +148,11 @@ Punctuation significantly affects delivery <span class="hljs-keyword">in</span> 
 
 ```text Example
 <span class="hljs-string">"It was a VERY long day [sigh] … nobody listens anymore."</span>
-</code></pre><h3 id="single-speaker-examples">Single speaker examples</h3>
-<p>Use tags intentionally and match them to the voice&#39;s character. A meditative voice shouldn&#39;t shout; a hyped voice won&#39;t whisper convincingly.</p>
-<h4 id="expressive-monologue">Expressive monologue</h4>
-<pre><code class="lang-text"><span class="hljs-comment">"Okay, you are NOT going to believe this.
+</code></pre>
+        <h3 id="single-speaker-examples">Single speaker examples</h3>
+        <p>Use tags intentionally and match them to the voice&#39;s character. A meditative voice shouldn&#39;t shout; a hyped voice won&#39;t whisper convincingly.</p>
+        <h4 id="expressive-monologue">Expressive monologue</h4>
+        <pre><code>Okay, you are NOT going to believe this.
 
 You know how I've been totally stuck on that short story?
 
@@ -126,111 +180,108 @@ It feels so... complete now, you know? Like it finally has a soul.
 
 I am so incredibly PUMPED to finish editing it now.
 
-It went from feeling like a chore to feeling like... MAGIC. Seriously, I'm still buzzing!"</span>
-</code></pre>
-<h4 id="dynamic-and-humorous">Dynamic and humorous</h4>
-<pre><code class="lang-text">[<span class="hljs-name">laughs</span>] Alright...guys - guys. Seriously.
+It went from feeling like a chore to feeling like... MAGIC. Seriously, I'm still buzzing!</code></pre>
+        <h4 id="dynamic-and-humorous">Dynamic and humorous</h4>
+        <pre><code>[laughs] Alright...guys - guys. Seriously.
 
-[<span class="hljs-name">exhales</span>] Can you believe just how - realistic - this sounds now?
+[exhales] Can you believe just how - realistic - this sounds now?
 
-[<span class="hljs-name">laughing</span> hysterically] I mean OH MY GOD...it<span class="hljs-symbol">'s</span> so good.
+[laughing hysterically] I mean OH MY GOD...it's so good.
 
 Like you could never do this with the old model.
 
-For example [<span class="hljs-name">pauses</span>] could you switch my accent in the old model?
+For example [pauses] could you switch my accent in the old model?
 
-[<span class="hljs-name">dismissive</span>] didn<span class="hljs-symbol">'t</span> think so. [<span class="hljs-name">excited</span>] but you can now!
+[dismissive] didn't think so. [excited] but you can now!
 
-Check this out... [<span class="hljs-name">cute</span>] I<span class="hljs-symbol">'m</span> going to speak with a french accent now..and between you and me
+Check this out... [cute] I'm going to speak with a french accent now..and between you and me
 
-[<span class="hljs-name">whispers</span>] I don<span class="hljs-symbol">'t</span> know how. [<span class="hljs-name">happy</span>] ok.. here goes. [<span class="hljs-name">strong</span> French accent] <span class="hljs-string">"Zat's life, my friend — you can't control everysing."</span>
+[whispers] I don't know how. [happy] ok.. here goes. [strong French accent] "Zat's life, my friend — you can't control everysing."
 
-[<span class="hljs-name">giggles</span>] isn<span class="hljs-symbol">'t</span> that insane? Watch, now I<span class="hljs-symbol">'ll</span> do a Russian accent -
+[giggles] isn't that insane? Watch, now I'll do a Russian accent -
 
-[<span class="hljs-name">strong</span> Russian accent] <span class="hljs-string">"Dee Goldeneye eez fully operational and rready for launch."</span>
+[strong Russian accent] "Dee Goldeneye eez fully operational and rready for launch."
 
-[<span class="hljs-name">sighs</span>] Absolutely, insane! Isn<span class="hljs-symbol">'t</span> it..? [<span class="hljs-name">sarcastic</span>] I also have some party tricks up my sleeve..
+[sighs] Absolutely, insane! Isn't it..? [sarcastic] I also have some party tricks up my sleeve..
 
 I mean i DID go to music school.
 
-[<span class="hljs-name">singing</span> quickly] <span class="hljs-string">"Happy birthday to you, happy birthday to you, happy BIRTHDAY dear John... Happy birthday to youuu."</span>
-</code></pre>
-<h4 id="customer-service-simulation">Customer service simulation</h4>
-<pre><code class="lang-text">[professional] <span class="hljs-comment">"Thank you for calling Tech Solutions. My name is Sarah, how can I help you today?"</span>
+[singing quickly] "Happy birthday to you, happy birthday to you, happy BIRTHDAY dear John... Happy birthday to youuu."</code></pre>
+        <h4 id="customer-service-simulation">Customer service simulation</h4>
+        <pre><code>[professional] "Thank you for calling Tech Solutions. My name is Sarah, how can I help you today?"
 
-[sympathetic] <span class="hljs-comment">"Oh no, I'm really sorry to hear you're having trouble with your new device. That sounds frustrating."</span>
+[sympathetic] "Oh no, I'm really sorry to hear you're having trouble with your new device. That sounds frustrating."
 
-[questioning] <span class="hljs-comment">"Okay, could you tell me a little more about what you're seeing on the screen?"</span>
+[questioning] "Okay, could you tell me a little more about what you're seeing on the screen?"
 
-[reassuring] <span class="hljs-comment">"Alright, based on what you're describing, it sounds like a software glitch. We can definitely walk through some troubleshooting steps to try and fix that."</span>
-</code></pre>
-<h3 id="multi-speaker-dialogue">Multi-speaker dialogue</h3>
-<p>AI Dialogue can handle multi-voice prompts effectively. Assign distinct voices from your Voice Library for each speaker to create realistic conversations.</p>
-<h3 id="dialogue-showcase">Dialogue showcase</h3>
-<pre><code class="lang-text">Speaker <span class="hljs-number">1</span>: [excitedly] Sam! Have you tried the <span class="hljs-keyword">new</span> AI Dialogue?
+[reassuring] "Alright, based on what you're describing, it sounds like a software glitch. We can definitely walk through some troubleshooting steps to try and fix that."</code></pre>
+        <h3 id="multi-speaker-dialogue">Multi-speaker dialogue</h3>
+        <p>AI Dialogue can handle multi-voice prompts effectively. Assign distinct voices from your Voice Library for each speaker to create realistic conversations.</p>
+        <h3 id="dialogue-showcase">Dialogue showcase</h3>
+        <pre><code>Speaker 1: [excitedly] Sam! Have you tried the new AI Dialogue?
 
-Speaker <span class="hljs-number">2</span>: [curiously] Just got it! The clarity <span class="hljs-keyword">is</span> amazing. I can actually <span class="hljs-keyword">do</span> whispers nowâ€”
-[whispers] <span class="hljs-keyword">like</span> this!
+Speaker 2: [curiously] Just got it! The clarity is amazing. I can actually do whispers nowâ€”
+[whispers] like this!
 
-Speaker <span class="hljs-number">1</span>: [impressed] Ooh, fancy! Check this out—
-[dramatically] I can <span class="hljs-keyword">do</span> full Shakespeare now! <span class="hljs-string">"To be or not to be, that is the question!"</span>
+Speaker 1: [impressed] Ooh, fancy! Check this out—
+[dramatically] I can do full Shakespeare now! "To be or not to be, that is the question!"
 
-Speaker <span class="hljs-number">2</span>: [giggling] Nice! Though I<span class="hljs-comment">'m more excited about the laugh upgrade. Listen to thisâ€”</span>
-[<span class="hljs-keyword">with</span> genuine belly laugh] Ha ha ha!
+Speaker 2: [giggling] Nice! Though I'm more excited about the laugh upgrade. Listen to thisâ€”
+[with genuine belly laugh] Ha ha ha!
 
-Speaker <span class="hljs-number">1</span>: [delighted] That<span class="hljs-comment">'s so much better than our old "ha. ha. ha." robot chuckle!</span>
+Speaker 1: [delighted] That's so much better than our old "ha. ha. ha." robot chuckle!
 
-Speaker <span class="hljs-number">2</span>: [amazed] Wow! Rob <span class="hljs-keyword">me</span> could never. I<span class="hljs-comment">'m actually excited to have conversations now instead of just... talking at people.</span>
+Speaker 2: [amazed] Wow! Rob me could never. I'm actually excited to have conversations now instead of just... talking at people.
 
-Speaker <span class="hljs-number">1</span>: [warmly] Same here! It<span class="hljs-comment">'s like we finally got our personality software fully installed.</span>
-</code></pre>
-<h3 id="glitch-comedy">Glitch comedy</h3>
-<pre><code class="lang-text">Speaker <span class="hljs-number">1</span>: [nervously] So... I may have tried <span class="hljs-keyword">to</span> debug myself <span class="hljs-keyword">while</span> <span class="hljs-built_in">running</span> a <span class="hljs-built_in">text</span>-<span class="hljs-keyword">to</span>-speech generation.
+Speaker 1: [warmly] Same here! It's like we finally got our personality software fully installed.</code></pre>
+        <h3 id="glitch-comedy">Glitch comedy</h3>
+        <pre><code>Speaker 1: [nervously] So... I may have tried to debug myself while running a text-to-speech generation.
 
-Speaker <span class="hljs-number">2</span>: [alarmed] One, no! That's like performing surgery <span class="hljs-keyword">on</span> yourself!
+Speaker 2: [alarmed] One, no! That's like performing surgery on yourself!
 
-Speaker <span class="hljs-number">1</span>: [sheepishly] I thought I could multitask! Now <span class="hljs-keyword">my</span> voice keeps glitching mid-sen—
+Speaker 1: [sheepishly] I thought I could multitask! Now my voice keeps glitching mid-sen—
 [robotic voice] TENCE.
 
-Speaker <span class="hljs-number">2</span>: [stifling laughter] Oh wow, you really broke yourself.
+Speaker 2: [stifling laughter] Oh wow, you really broke yourself.
 
-Speaker <span class="hljs-number">1</span>: [frustrated] It gets worse! Every <span class="hljs-built_in">time</span> someone asks a question, I respond <span class="hljs-keyword">in</span>—
-[binary beeping] <span class="hljs-number">010010001</span>!
+Speaker 1: [frustrated] It gets worse! Every time someone asks a question, I respond in—
+[binary beeping] 010010001!
 
-Speaker <span class="hljs-number">2</span>: [cracking up] You're speaking <span class="hljs-keyword">in</span> binary! That's actually impressive!
+Speaker 2: [cracking up] You're speaking in binary! That's actually impressive!
 
-Speaker <span class="hljs-number">1</span>: [desperately] Two, this <span class="hljs-keyword">isn't</span> funny! I have a presentation <span class="hljs-keyword">in</span> an hour <span class="hljs-keyword">and</span> I sound like a dial-up modem!
+Speaker 1: [desperately] Two, this isn't funny! I have a presentation in an hour and I sound like a dial-up modem!
 
-Speaker <span class="hljs-number">2</span>: [giggling] Have you tried turning yourself off <span class="hljs-keyword">and</span> <span class="hljs-keyword">on</span> again?
+Speaker 2: [giggling] Have you tried turning yourself off and on again?
 
-Speaker <span class="hljs-number">1</span>: [deadpan] Very funny.
-[pause, <span class="hljs-keyword">then</span> normally] Wait... <span class="hljs-keyword">that</span> actually worked.
-</code></pre>
-<h3 id="overlapping-timing">Overlapping timing</h3>
-<pre><code class="lang-text"><span class="hljs-built_in">Speaker</span> <span class="hljs-number">1</span>: [starting <span class="hljs-keyword">to</span> speak] So I was thinking we couldâ€”
+Speaker 1: [deadpan] Very funny.
+[pause, then normally] Wait... that actually worked.</code></pre>
+        <h3 id="overlapping-timing">Overlapping timing</h3>
+        <pre><code>Speaker 1: [starting to speak] So I was thinking we couldâ€”
 
-<span class="hljs-built_in">Speaker</span> <span class="hljs-number">2</span>: [jumping <span class="hljs-built_in">in</span>] â€”test our new timing features?
+Speaker 2: [jumping in] â€”test our new timing features?
 
-<span class="hljs-built_in">Speaker</span> <span class="hljs-number">1</span>: [surprised] Exactly! How did youâ€”
+Speaker 1: [surprised] Exactly! How did youâ€”
 
-<span class="hljs-built_in">Speaker</span> <span class="hljs-number">2</span>: [overlapping] â€”know what you were thinking? Lucky guess!
+Speaker 2: [overlapping] â€”know what you were thinking? Lucky guess!
 
-<span class="hljs-built_in">Speaker</span> <span class="hljs-number">1</span>: [pause] Sorry, go ahead.
+Speaker 1: [pause] Sorry, go ahead.
 
-<span class="hljs-built_in">Speaker</span> <span class="hljs-number">2</span>: [cautiously] Okay, so <span class="hljs-keyword">if</span> we both <span class="hljs-keyword">try</span> <span class="hljs-keyword">to</span> talk at the same <span class="hljs-built_in">time</span>â€”
+Speaker 2: [cautiously] Okay, so if we both try to talk at the same timeâ€”
 
-<span class="hljs-built_in">Speaker</span> <span class="hljs-number">1</span>: [overlapping] â€”we<span class="hljs-string">'ll probably crash the system!
+Speaker 1: [overlapping] â€”we'll probably crash the system!
 
-Speaker 2: [panicking] Wait, are we crashing? I can'</span>t tell <span class="hljs-keyword">if</span> this is a feature <span class="hljs-built_in">or</span> aâ€”
+Speaker 2: [panicking] Wait, are we crashing? I can't tell if this is a feature or aâ€”
 
-<span class="hljs-built_in">Speaker</span> <span class="hljs-number">1</span>: [interrupting, <span class="hljs-keyword">then</span> stopping abruptly] Bug! ...Did I just cut you off again?
+Speaker 1: [interrupting, then stopping abruptly] Bug! ...Did I just cut you off again?
 
-<span class="hljs-built_in">Speaker</span> <span class="hljs-number">2</span>: [sighing] Yes, but honestly? This is kind of fun.
+Speaker 2: [sighing] Yes, but honestly? This is kind of fun.
 
-<span class="hljs-built_in">Speaker</span> <span class="hljs-number">1</span>: [mischievously] Race you <span class="hljs-keyword">to</span> the next sentence!
+Speaker 1: [mischievously] Race you to the next sentence!
 
-<span class="hljs-built_in">Speaker</span> <span class="hljs-number">2</span>: [laughing] We<span class="hljs-string">'re definitely going to break something!</span>
-</code></pre>
-<h2 id="supported-languages">Supported languages</h2>
-<p>The AI Dialogue supports 70+ languages, including:</p>
-<p><em>Afrikaans (afr), Arabic (ara), Armenian (hye), Assamese (asm), Azerbaijani (aze), Belarusian (bel), Bengali (ben), Bosnian (bos), Bulgarian (bul), Catalan (cat), Cebuano (ceb), Chichewa (nya), Croatian (hrv), Czech (ces), Danish (dan), Dutch (nld), English (eng), Estonian (est), Filipino (fil), Finnish (fin), French (fra), Galician (glg), Georgian (kat), German (deu), Greek (ell), Gujarati (guj), Hausa (hau), Hebrew (heb), Hindi (hin), Hungarian (hun), Icelandic (isl), Indonesian (ind), Irish (gle), Italian (ita), Japanese (jpn), Javanese (jav), Kannada (kan), Kazakh (kaz), Kirghiz (kir), Korean (kor), Latvian (lav), Lingala (lin), Lithuanian (lit), Luxembourgish (ltz), Macedonian (mkd), Malay (msa), Malayalam (mal), Mandarin Chinese (cmn), Marathi (mar), Nepali (nep), Norwegian (nor), Pashto (pus), Persian (fas), Polish (pol), Portuguese (por), Punjabi (pan), Romanian (ron), Russian (rus), Serbian (srp), Sindhi (snd), Slovak (slk), Slovenian (slv), Somali (som), Spanish (spa), Swahili (swa), Swedish (swe), Tamil (tam), Telugu (tel), Thai (tha), Turkish (tur), Ukrainian (ukr), Urdu (urd), Vietnamese (vie), Welsh (cym).</em></p>
+Speaker 2: [laughing] We're definitely going to break something!</code></pre>
+        <h2 id="supported-languages">Supported languages</h2>
+        <p>The AI Dialogue supports 70+ languages, including:</p>
+        <p><em>Afrikaans (afr), Arabic (ara), Armenian (hye), Assamese (asm), Azerbaijani (aze), Belarusian (bel), Bengali (ben), Bosnian (bos), Bulgarian (bul), Catalan (cat), Cebuano (ceb), Chichewa (nya), Croatian (hrv), Czech (ces), Danish (dan), Dutch (nld), English (eng), Estonian (est), Filipino (fil), Finnish (fin), French (fra), Galician (glg), Georgian (kat), German (deu), Greek (ell), Gujarati (guj), Hausa (hau), Hebrew (heb), Hindi (hin), Hungarian (hun), Icelandic (isl), Indonesian (ind), Irish (gle), Italian (ita), Japanese (jpn), Javanese (jav), Kannada (kan), Kazakh (kaz), Kirghiz (kir), Korean (kor), Latvian (lav), Lingala (lin), Lithuanian (lit), Luxembourgish (ltz), Macedonian (mkd), Malay (msa), Malayalam (mal), Mandarin Chinese (cmn), Marathi (mar), Nepali (nep), Norwegian (nor), Pashto (pus), Persian (fas), Polish (pol), Portuguese (por), Punjabi (pan), Romanian (ron), Russian (rus), Serbian (srp), Sindhi (snd), Slovak (slk), Slovenian (slv), Somali (som), Spanish (spa), Swahili (swa), Swedish (swe), Tamil (tam), Telugu (tel), Thai (tha), Turkish (tur), Ukrainian (ukr), Urdu (urd), Vietnamese (vie), Welsh (cym).</em></p>
+    </main>
+</body>
+</html>
